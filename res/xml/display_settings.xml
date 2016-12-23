@@ -145,7 +145,17 @@
                 android:summary="%s"
                 android:title="@string/display_vr_pref_title" />
 
-    </PreferenceCategory>
+        <PreferenceCategory
+            android:title="@string/theme_title">
+
+            <com.android.settings.display.ThemePreference
+                android:key="theme"
+                android:title="@string/theme" />
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:key="leds"
+            android:title="@string/leds" >
 
     <PreferenceCategory
             android:key="dashboard_category"
@@ -189,5 +199,4 @@
                 android:defaultValue="true" />
 
         </PreferenceCategory>
-
 </PreferenceScreen>
