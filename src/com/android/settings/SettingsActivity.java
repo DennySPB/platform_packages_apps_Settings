@@ -1233,7 +1233,7 @@ public class SettingsActivity extends SettingsDrawerActivity
 	// GMS MicroG Settings
         boolean gmspresent = false;
         try {
-            gmspresent = (getPackageManager().getPackageInfo("com.google.android.gms", 0).versionCode > 0);
+            gmspresent = (getPackageManager().getPackageInfo("org.microg.gms.droidguard", 0).versionCode > 0);
         } catch (PackageManager.NameNotFoundException e) {
         }
         setTileEnabled(new ComponentName(packageName,
