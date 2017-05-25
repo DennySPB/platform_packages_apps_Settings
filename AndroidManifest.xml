@@ -3090,7 +3090,7 @@
 
         <activity android:name="Settings$GMSActivity"
                 android:label="@string/gms_title"
-                android:icon="@drawable/ic_microg_settings"
+                android:icon="@drawable/ic_settings"
                 android:taskAffinity="" >
             <intent-filter android:priority="4">
                 <action android:name="android.intent.action.MAIN" />
