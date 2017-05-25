@@ -14,7 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Maintainers -->
     <string-array name="maintainers_title" translatable="false">
         <item>ishubhamsingh</item>
@@ -38,7 +38,7 @@
         <item>Prasoon Mehra (phantom-1402)</item>
 	<item>Harshit Jain (dev_harsh1998)</item>
 	<item>Anand Roy</item>
-	<item>jsbeyond (KAOKAO)</item>
+        <item>jsbeyond (KAOKAO)</item>
 	<item>Vedant Kamlaskar</item>
 	<item>Devansh Bajaj</item>
 	<item>Alexander Gemsa</item>
@@ -46,7 +46,7 @@
 	<item>EsromG5</item>
 	<item>YoDevil</item>
         <item>Tirth Patel (thp@1997)</item>
-     	<item>Mihir Kalra</item>
+        <item>Mihir Kalra</item>
         <item>Prakharluv</item>   
 	<item>Rygebin</item>
 	<item>Incredible,EypCnn</item>
@@ -55,6 +55,8 @@
 	<item>Allurba</item>
 	<item>Rohan Taneja</item>
 	<item>EypCnn, Kerem Erkaplan (hd)</item>
+        <item>Ajdin Kuduzovic (AjdinK)</item>
+	<item>Rohan Khurana</item>
   </string-array>
 
     <!-- Devices maintained by maintainer -->
@@ -77,14 +79,14 @@
         <item>OnePlus Two (op2)</item> <!-- Maintainer: Subham (DerkLord) -->
 	<item>YU Yuphoria</item> <!-- Maintainer: teja.k -->
 	<item>YU Yunique</item> <!-- Maintainer: Prateek Chaubey -->
-        <item>Oneplus 3/3T (oneplus3) </item> <!-- Maintainer: Prasoon Mehra (phantom-1402) -->
+        <item>Oneplus 3/3T (oneplus3), LeEco Le Pro 3 (zl1) </item> <!-- Maintainer: Prasoon Mehra (phantom-1402) -->
         <item>Lenovo A6000</item> <!-- Maintainer: Harshit Jain (dev_harsh1998) -->
 	<item>MI 4I</item> <!-- Maintainer: Anand Roy -->
 	<item>Huawei kiwi,Xiaomi Max(hydrogen)</item> <!-- Maintainer: jsbeyond (KAOKAO) -->  
 	<item>Xiaomi Redmi 1S(armani)</item> <!-- Maintainer: Vedant Kamlaskar -->
 	<item>Lenovo Vibe P1(p1a42)</item> <!-- Maintainer: Devansh Bajaj -->
 	<item>Samsung Galaxy S7 Flat/Edge, Galaxy TabS2 9.7 Wifi/Lte</item> <!-- Maintainer: Alexander Gemsa -->
-	<item>Moto MAXX (quark)</item> <!-- Maintainer: Dev Marsh -->
+        <item>Moto MAXX (quark)</item> <!-- Maintainer: Dev Marsh -->
 	<item>Samsung Galaxy J5, Xiaomi Redmi 3 </item> <!-- Maintainer: EsromG5 -->
 	<item>LG G2 (D802)</item> <!-- Maintainer: YoDevil -->
         <item>Redmi Note 4 (mido)</item> <!-- Maintainer: Tirth Patel (thp@1997) -->
@@ -97,6 +99,8 @@
 	<item>Huawei GX8</item> <!-- Maintainer: Allurba -->
 	<item>Lenovo A7000-a</item> <!-- Maintainer: Rohan Taneja -->
 	<item>Android One 2\'nd Device (seed)</item> <!-- Maintainer: EypCnn, Kerem Erkaplan (hd) -->
+        <item>Google Nexus 6 (Shamu)</item> <!-- Ajdin Kuduzovic (AjdinK) -->
+	<item>Xiaomi Mi5 (Gemini)</item> <!-- Rohan Khurana -->
     </string-array>
 
     <!-- XDA Profile URL of maintainer -->
@@ -139,5 +143,7 @@
 	<item>https://forum.xda-developers.com/member.php?u=4387106</item> <!-- Maintainer: Allurba -->
 	<item>https://forum.xda-developers.com/member.php?u=5138268</item> <!-- Maintainer: Rohan Taneja -->
 	<item>https://forum.xda-developers.com/member.php?u=7046303</item> <!-- Maintainer: EypCnn, Kerem Erkaplan (hd) -->
-	</string-array>
+	<item>https://forum.xda-developers.com/member.php?u=7345383</item> <!-- Maintainer: Ajdin Kuduzovic (AjdinK) -->
+	<item>https://forum.xda-developers.com/member.php?u=7526018</item> <!-- Maintainer: Rohan Khurana -->
+    </string-array>
 </resources>
