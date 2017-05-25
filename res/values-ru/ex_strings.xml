@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2012-2015 The CyanogenMod Project
+     Copyright (C) 2016 The AospExtended ROM Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<!-- About phone screen, Extended version -->
+    <string name="extended_version">Расширенная версия</string>
+    <string name="extended_version_default">Неизвестно</string>
+    <string name="extensions_title">Расширения</string>
+
+<!-- AEX OTA -->
+    <string name="aex_ota_title">Обновления AEX</string>
+    <string name="aex_ota_summary">Получить последнюю сборку</string>
+
+<!-- About phone screen, build date -->
+    <string name="build_date">Дата сборки</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    
+    <!-- Vendor version -->
+    <string name="vendor_version">Vendor version</string>
+    <string name="vendor_version_default">Неизвестно</string>
+   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+   <string name="local_backup_password_title">Desktop backup password</string>
+
+    <!-- Volume Steps -->
+     <string name="volume_steps_title">Шаги уровня громкости</string>
+     <string name="volume_steps_alarm_title">Уровень громкости: Будильник</string>
+     <string name="volume_steps_dtmf_title">Уровень громкости: Набор номера</string>
+     <string name="volume_steps_music_title">Уровень громкости: Музыка</string>
+     <string name="volume_steps_notification_title">Уровень громкости: Уведомления</string>
+     <string name="volume_steps_ring_title">Уровень громкости: Звонок</string>
+     <string name="volume_steps_system_title">Уровень громкости: Система</string>
+     <string name="volume_steps_voice_call_title">Уровень громкости: Голосовой вызов</string>
+     <string name="volume_steps_reset">Сброс</string>
+     <string name="volume_steps_60" translatable="false">60</string>
+     <string name="volume_steps_45" translatable="false">45</string>
+     <string name="volume_steps_30" translatable="false">30</string>
+     <string name="volume_steps_15" translatable="false">15</string>
+     <string name="volume_steps_7" translatable="false">7</string>
+     <string name="volume_steps_5" translatable="false">5</string>
+      
+    <!-- Volume settings - Volume adjustment sound -->
+     <string name="volume_adjust_sounds_title">Звуки регулировки громкости</string>
+    
+    <!-- Keyboard and Input ASS methods -->
+    <string name="show_enter_key_title">Отображать клавишу Enter</string>
+    <string name="show_enter_key_summary">Принудительно отображать Enter вместо клавиши Эмоджи</string>
+
+    <!-- Whether to display IME switcher notifcation -->
+    <string name="ime_switcher_notify">Селектор уведомления</string>
+    <string name="ime_switcher_notify_summary">Уведомление о селекторе метода ввода</string>
+
+    <!-- Changelog -->
+    <string name="changelog_title">Список изменений</string>
+    <string name="changelog_error">Не могу загрузить список изменений</string>
+    <string name="changelog_summary">Последние изменения</string>
+
+    <!-- Linked / unlinked notification volume -->
+    <string name="link_volume_option_title">Объединить уровень громкости звонка и уведомления</string>
+    <string name="notification_volume_option_title">Громкость уведомления</string>
+    <string name="ring_notification_volume_option_title">Громкость звонка и уведомления</string>
+
+    <!-- Camera sound -->
+    <string name="camera_sounds_title">Звук затвора камеры</string>
+
+    <!-- Custom tiles summary -->
+    <string name="substratum_settings_summary">Темы</string>
+    <!-- Root Management -->
+    <string name="rootmanagement_title">Настройка прав суперпользователя</string>
+    <string name="rootmanagement_dashboard_summary">Управление доступом суперпользователя</string>
+    <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+    <string name="supersu_title">SuperSU</string>
+
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Нарастающая громкость звонка</string>
+    <string name="increasing_ring_min_volume_title">Начальная громкость</string>
+    <string name="increasing_ring_ramp_up_time_title">Время увеличения</string>
+
+    <!-- Less Notification sounds -->
+    <string name="less_notification_sounds_title">Редкие звуки уведомлений</string>
+    <string name="less_notification_sounds_summary">Ограничить звуки уведомлений для приложения, чтобы воспроизводилось только один раз за определенный период времени</string>
+    <string name="less_notification_sounds_default">Поведение по умолчанию</string>
+    <string name="less_notification_sounds_3s">3 секунды</string>
+    <string name="less_notification_sounds_5s">5 секунд</string>
+    <string name="less_notification_sounds_10s">10 секунд</string>
+    <string name="less_notification_sounds_15s">15 секунд</string>
+    <string name="less_notification_sounds_30s">30 секунд</string>
+    <string name="less_notification_sounds_45s">45 секунд</string>
+    <string name="less_notification_sounds_1m">1 минута</string>
+    <string name="less_notification_sounds_2m">2 минуты</string>
+    <string name="less_notification_sounds_5m">5 минут</string>
+
+    <!-- Magisk Manager -->
+    <string name="magisk_title">Управление Magisk</string>
+    <string name="magisk_summary">Управление правами суперпользователя</string>
+
+    <!-- PIN scramble -->
+    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data_category_title">Доступ к передачи данных через сотовую сеть</string>
+    <string name="data_usage_app_restrict_wifi_category_title">Доступ к передачи данных через Wi\u2011Fi сеть</string>
+    <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+    <string name="data_usage_app_restrict_all_data_title">Откл. передачу данных по GSM</string>
+    <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+    <string name="data_usage_app_restrict_all_data_summary">Предотвратить любое использования доступа к передачи данных через сотовую сеть</string>
+    <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+    <string name="data_usage_app_restrict_all_wifi_title">Откл. передачу данных через Wi\u2011Fi</string>
+    <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
+    <string name="data_usage_app_restrict_all_wifi_summary">Предотвратить любое использования доступа к передачи данных через Wi\u2011Fi сеть</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Сбросить статистику</string>
+    <string name="battery_stats_message">Статистика батареи будет сброшена</string>
+    <string name="ok_string">Ок</string>
+
+    <!-- Doze pulse options -->
+    <string name="doze_settings">Настройки бездествия</string>
+    <string name="summary_doze_enabled">Включен</string>
+    <string name="summary_doze_disabled">Выключен</string>
+    <string name="doze_overwrite_value_title">Переписать умолчания</string>
+    <string name="doze_overwrite_value_summary">Разрешить переопределение значений по умолчанию с помощью пользовательской конфигурации</string>
+    <string name="doze_pulse_title">Пользовательские настройки</string>
+    <string name="doze_pulse_duration_in_title">Появление</string>
+    <string name="doze_pulse_duration_in_summary"></string>
+    <string name="doze_pulse_duration_visible_title">Видимая продолжительность</string>
+    <string name="doze_pulse_duration_visible_summary"></string>
+    <string name="doze_pulse_duration_out_title">Затухание</string>
+    <string name="doze_pulse_duration_out_summary"></string>
+    <string name="doze_trigger_pickup_title">Триггер Pick up датчика</string>
+    <string name="doze_trigger_pickup_summary_on">Pulse сработает от датчика</string>
+    <string name="doze_trigger_pickup_summary_off">Pick up датчик не будет использоваться в качестве триггера</string>
+    <string name="doze_trigger_notification_title">Триггер уведомления</string>
+    <string name="doze_trigger_notification_summary_on">Pulse сработает от триггера уведомлений</string>
+    <string name="doze_trigger_notification_summary_off">Уведомления не будут использоваться в качестве триггера</string>
+    <string name="doze_brightness_level_title">Уровень яркости</string>
+    <string name="onehundred_ms">100 мс</string>
+    <string name="twofifty_ms">250 мс</string>
+    <string name="fivehundred_ms_default">500 мс (по умолчанию)</string>
+    <string name="sevenfifty_ms">750 мс</string>
+    <string name="one_second">1 с</string>
+    <string name="onehalf_second">1.5 с</string>
+    <string name="two_second">2 с</string>
+    <string name="twohalf_second">2.5 с</string>
+    <string name="three_second_default">3 с (по умолчанию)</string>
+    <string name="threehalf_second">3.5 с</string>
+    <string name="four_second">4 с</string>
+    <string name="fourhalf_second">4.5 с</string>
+    <string name="five_second">5 с</string>
+    <string name="doze_notification_color_invert_title">Инверсия уведомления</string>
+    <string name="doze_notification_color_invert_summary_off">Уведомления не будут инвертированы. Используйте для темных тем.</string>
+    <string name="doze_notification_color_invert_summary_on">Уведомления будут инвертированы. Используйте для светлых/стоковых тем.</string>
+
+    <!-- Double tap for doze -->
+    <string name="double_tap_wake_doze_title">Двойное касания для пробуждения в режиме бездействия</string>
+    <string name="double_tap_wake_doze_summary">Требовать двойное касание для пробуждения устройства в режиме бездействия</string>
+
+    <!-- App Ops Settings -->
+    <!-- [CHAR LIMIT=NONE] App ops settings title, on main settings screen. If clicked, the user is taken to a settings screen for app operations -->
+    <string name="app_ops_settings">Операции в приложениях</string>
+    <!-- [CHAR LIMIT=NONE] App ops settings summary, on main settings screen. If clicked, the user is taken to a settings screen for app operations -->
+    <string name="app_ops_settings_summary">Расширенные опции операций в приложениях</string>
+
+    <!-- App Ops Settings -->
+    <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">Местоположение</string>
+    <string name="app_ops_cat_personal">Персональные</string>
+    <string name="app_ops_cat_messaging">Обмен сообщениями</string>
+    <string name="app_ops_cat_media">Медиа</string>
+    <string name="app_ops_cat_device">Устройство</string>
+
+    <!-- [CHAR LIMIT=NONE] App ops labels -->
+    <string name="app_ops_access_camera">Камера</string>
+    <string name="app_ops_access_location">Местоположение</string>
+    <string name="app_ops_access_notifications">Уведомления</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">Автозапуск</string>
+    <string name="app_ops_delete_call_log">Удаление журнала звонков</string>
+    <string name="app_ops_delete_contacts">Удаление контактов</string>
+    <string name="app_ops_delete_mms">Удаление MMS</string>
+    <string name="app_ops_delete_sms">Удаление SMS</string>
+    <string name="app_ops_draw_on_top">Всегда на экране</string>
+    <string name="app_ops_get_usage_stats">Статистика использования</string>
+    <string name="app_ops_keep_device_awake">Пробуждение устройства</string>
+    <string name="app_ops_make_phone_call">Совершать звонок</string>
+    <string name="app_ops_modify_calendar">Обновлять календарь</string>
+    <string name="app_ops_modify_call_log">Обновлять журнал звонков</string>
+    <string name="app_ops_modify_clipboard">Обновлять буфер обмена</string>
+    <string name="app_ops_modify_contacts">Обновлять контакты</string>
+    <string name="app_ops_modify_settings">Обновлять настройки</string>
+    <string name="app_ops_mute_unmute_microphone">Откл/вкл микрофон</string>
+    <string name="app_ops_play_audio">Играть звук</string>
+    <string name="app_ops_post_notification">Создавать уведомление</string>
+    <string name="app_ops_project_media">Транслировать медиа</string>
+    <string name="app_ops_read_calendar">Читать календарь</string>
+    <string name="app_ops_read_call_log">Читать журнал звонков</string>
+    <string name="app_ops_read_clipboard">Читать буфер обмена</string>
+    <string name="app_ops_read_contacts">Читать контакты</string>
+    <string name="app_ops_read_mms">Читать MMS</string>
+    <string name="app_ops_read_sms">Читать SMS</string>
+    <string name="app_ops_receive_sms">Получать SMS</string>
+    <string name="app_ops_record_audio">Записывать звук</string>
+    <string name="app_ops_send_mms">Посылать MMS</string>
+    <string name="app_ops_send_sms">Посылать SMS</string>
+    <string name="app_ops_toast_window">toast messages</string>
+    <string name="app_ops_use_alarm_volume">Громкость будильника</string>
+    <string name="app_ops_use_audio_focus">Аудио фокус</string>
+    <string name="app_ops_use_bluetooth_volume">Громкость Bluetooth</string>
+    <string name="app_ops_use_master_volume">Основная громкость</string>
+    <string name="app_ops_use_media_buttons">Кнопки медиа</string>
+    <string name="app_ops_use_media_volume">Громкость медиа</string>
+    <string name="app_ops_use_notification_volume">Громкость уведомлений</string>
+    <string name="app_ops_use_ring_volume">Громкость мелодии звонка</string>
+    <string name="app_ops_use_vibrate">Виброотклик</string>
+    <string name="app_ops_use_voice_volume">Громкость голосовых вызовов</string>
+    <string name="app_ops_write_mms">Писать MMS</string>
+    <string name="app_ops_write_sms">Писать SMS</string>
+    <string name="app_ops_use_fingerprint">Отпечаток пальца</string>
+    <string name="app_ops_add_voicemail">Голосовая почта</string>
+    <string name="app_ops_read_phone_state">Доступ к состоянию телефона</string>
+    <string name="app_ops_scan_wifi">Сканировать WiFi сети</string>
+    <string name="app_ops_change_wallpaper">Изменять обои</string>
+    <string name="app_ops_assist_structure">assist structure</string>
+    <string name="app_ops_assist_screenshot">Скриншот</string>
+    <string name="app_ops_use_body_sensors">body сенсоры</string>
+    <string name="app_ops_read_cell_broadcasts">Широковещательная сеть</string>
+    <string name="app_ops_mock_location">mock местоположение</string>
+    <string name="app_ops_read_external_storage">read ext. stor.</string>
+    <string name="app_ops_write_external_storage">write ext. stor.</string>
+    <string name="app_ops_turn_on_screen">Включать экран</string>
+    <string name="app_ops_get_accounts">Аккаунты</string>
+    <string name="app_ops_run_in_background">Запуск в фоне</string>
+
+    <string name="ambient_display_show_battery_title">Статус батареи</string>
+    <string name="ambient_display_show_battery_summary">Отображать индикатор батареи во время pulse</string>
+
+    <!-- Battery Saver Settings -->
+    <!-- Disable Battery Saver Warning Color -->
+    <string name="battery_saver_color_title">Цвет предупреждения</string>
+    <string name="battery_saver_color_summary">Отображать красный статусбар и навигационные панели, когда активирована функция экономии заряда батареи</string>
+
+ <!-- Proximity wake -->
+    <string name="proximity_wake_title">Не допускать случайных пробуждений</string>
+    <string name="proximity_wake_summary">Проверять датчик приближения перед пробуждением экрана</string>
+
+    <!-- SystemUI restart prompt -->
+    <string name="systemui_restart_title">ВНИМАНИЕ</string>
+    <string name="systemui_restart_message">SystemUI будет перезапущен, чтобы выбранная настройка могла быть применена правильно.</string>
+    <string name="restarting_ui">Перезапускается UI\u2026</string>
+    <string name="print_restart">Перезапуск</string>
+
+    <string name="device_gestures_title">Жесты устройства</string>
+    <string name="device_gestures_summary">Дополнительные жесты для вашего устройства</string>
+
+    <string name="device_doze_title">Жесты Ambient display</string>
+    <string name="device_doze_summary">Установка жестов для режима Ambient display</string>
+    <string name="ka_title">Производительность</string>
+
+    <string name="gms_title">Настройка MicroG</string>
+    <string name="gms_summary">Сервисы MicroG</string>
+
+</resources>
+
