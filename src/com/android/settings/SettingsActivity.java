@@ -173,6 +173,7 @@ public class SettingsActivity extends SettingsDrawerActivity
     private static final String SAVE_KEY_SHOW_SEARCH = ":settings:show_search";
     private static final String SAVE_KEY_HOME_ACTIVITIES_COUNT = ":settings:home_activities_count";
 
+    private static final String KA_FRAGMENT = "com.android.settings.ka";
     /**
      * When starting this activity, the invoking Intent can contain this extra
      * string to specify which fragment should be initially displayed.
@@ -253,6 +254,8 @@ public class SettingsActivity extends SettingsDrawerActivity
     private static final String ROOTMANAGEMENT_FRAGMENT = "com.android.settings.RootManagement";
 
     private static final String SUBSTRATUM_FRAGMENT = "com.android.settings.Substratum";
+
+    private static final String GMS_FRAGMENT = "com.android.settings.gms";
 
     private String mFragmentClass;
     private String mActivityAction;
@@ -1095,7 +1098,21 @@ public class SettingsActivity extends SettingsDrawerActivity
             finish();
             return null;
         }
-        if (SUBSTRATUM_FRAGMENT.equals(fragmentName)) {
+	 if (KA_FRAGMENT.equals(fragmentName)) {
+            Intent kaIntent = new Intent();
+            kaIntent.setClassName("com.grarak.kerneladiutor", "com.grarak.kerneladiutor.activities.MainActivity");
+            startActivity(kaIntent);
+            finish();
+            return null;
+	}
+	 if (GMS_FRAGMENT.equals(fragmentName)) {
+            Intent gmsIntent = new Intent();
+            gmsIntent.setClassName("com.google.android.gms", "org.microg.gms.ui.SettingsActivity");
+            startActivity(gmsIntent);
+            finish();
+            return null;
+         
+	 }  else  if (SUBSTRATUM_FRAGMENT.equals(fragmentName)) {
             Intent subIntent = new Intent();
             subIntent.setClassName("projekt.substratum", "projekt.substratum.LaunchActivity");
             startActivity(subIntent);
@@ -1205,6 +1222,23 @@ public class SettingsActivity extends SettingsDrawerActivity
                         Settings.SubstratumActivity.class.getName()),
                 subSupported, isAdmin, pm);
 
+        boolean kapresent = false;
+        try {
+            kapresent = (getPackageManager().getPackageInfo("com.grarak.kerneladiutor", 0).versionCode > 0);
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.KActivity.class.getName()),
+                kapresent, isAdmin, pm);
+	// GMS MicroG Settings
+        boolean gmspresent = false;
+        try {
+            gmspresent = (getPackageManager().getPackageInfo("org.microg.gms.droidguard", 0).versionCode > 0);
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.GMSActivity.class.getName()),
+                gmspresent, isAdmin, pm);
         // Root management
         setupRootManagement();
         setTileEnabled(new ComponentName(packageName,

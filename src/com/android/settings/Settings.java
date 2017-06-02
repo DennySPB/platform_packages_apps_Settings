@@ -162,6 +162,9 @@ public class Settings extends SettingsActivity {
     public static class PersonalSettings extends SettingsActivity { /* empty */ }
     public static class SystemSettings extends SettingsActivity { /* empty */ }
 
+    public static class KActivity extends SettingsActivity { /* empty */ }
+    public static class GMSActivity extends SettingsActivity { /* empty */ }
+
     // AospExtended Additions.
     public static class ExtensionsSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ExpandedDesktopSettingsActivity extends SettingsActivity { /* empty */ }
