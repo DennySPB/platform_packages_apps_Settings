@@ -68,12 +68,12 @@ public final class Ranking {
     public static final int RANK_DATA_USAGE = 4;
     public static final int RANK_WIRELESS = 5;
     public static final int RANK_DISPLAY = 6;
-    public static final int RANK_WALLPAPER = 7;
-    public static final int RANK_NOTIFICATIONS = 8;
-    public static final int RANK_SOUND = 9;
+    public static final int RANK_SOUND = 7;
+    public static final int RANK_POWER_USAGE = 8;
+    public static final int RANK_WALLPAPER = 9;
     public static final int RANK_APPS = 10;
-    public static final int RANK_STORAGE = 11;
-    public static final int RANK_POWER_USAGE = 12;
+    public static final int RANK_NOTIFICATIONS = 11;
+    public static final int RANK_STORAGE = 12;
     public static final int RANK_USERS = 13;
     public static final int RANK_LOCATION = 14;
     public static final int RANK_SECURITY = 15;
