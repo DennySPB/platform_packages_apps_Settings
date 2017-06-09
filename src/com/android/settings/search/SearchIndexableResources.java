@@ -136,12 +136,27 @@ public final class SearchIndexableResources {
                         DisplaySettings.class.getName(),
                         R.drawable.ic_settings_display));
 
-        sResMap.put(WallpaperTypeSettings.class.getName(),
+        sResMap.put(SoundSettings.class.getName(),
                 new SearchIndexableResource(
-                        Ranking.getRankForClassName(WallpaperTypeSettings.class.getName()),
+                        Ranking.getRankForClassName(SoundSettings.class.getName()),
                         NO_DATA_RES_ID,
-                        WallpaperTypeSettings.class.getName(),
-                        R.drawable.ic_settings_display));
+                        SoundSettings.class.getName(),
+                        R.drawable.ic_settings_sound));
+
+        sResMap.put(PowerUsageSummary.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(PowerUsageSummary.class.getName()),
+                        R.xml.power_usage_summary,
+                        PowerUsageSummary.class.getName(),
+                        R.drawable.ic_settings_battery));
+
+        sResMap.put(StorageSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(StorageSettings.class.getName()),
+                        NO_DATA_RES_ID,
+                        StorageSettings.class.getName(),
+                        R.drawable.ic_settings_storage));
+
 
         sResMap.put(ConfigureNotificationSettings.class.getName(),
                 new SearchIndexableResource(
@@ -150,12 +165,12 @@ public final class SearchIndexableResources {
                         ConfigureNotificationSettings.class.getName(),
                         R.drawable.ic_settings_notifications));
 
-        sResMap.put(SoundSettings.class.getName(),
+        sResMap.put(WallpaperTypeSettings.class.getName(),
                 new SearchIndexableResource(
-                        Ranking.getRankForClassName(SoundSettings.class.getName()),
+                        Ranking.getRankForClassName(WallpaperTypeSettings.class.getName()),
                         NO_DATA_RES_ID,
-                        SoundSettings.class.getName(),
-                        R.drawable.ic_settings_sound));
+                        WallpaperTypeSettings.class.getName(),
+                        R.drawable.ic_settings_display));
 
         sResMap.put(OtherSoundSettings.class.getName(),
                 new SearchIndexableResource(
@@ -177,20 +192,6 @@ public final class SearchIndexableResources {
                         R.xml.zen_mode_priority_settings,
                         ZenModePrioritySettings.class.getName(),
                         R.drawable.ic_settings_notifications));
-
-        sResMap.put(StorageSettings.class.getName(),
-                new SearchIndexableResource(
-                        Ranking.getRankForClassName(StorageSettings.class.getName()),
-                        NO_DATA_RES_ID,
-                        StorageSettings.class.getName(),
-                        R.drawable.ic_settings_storage));
-
-        sResMap.put(PowerUsageSummary.class.getName(),
-                new SearchIndexableResource(
-                        Ranking.getRankForClassName(PowerUsageSummary.class.getName()),
-                        R.xml.power_usage_summary,
-                        PowerUsageSummary.class.getName(),
-                        R.drawable.ic_settings_battery));
 
         sResMap.put(BatterySaverSettings.class.getName(),
                 new SearchIndexableResource(
