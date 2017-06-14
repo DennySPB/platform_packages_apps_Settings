@@ -54,6 +54,7 @@
         settings:animation="@raw/gesture_ambient_lift"
         settings:preview="@drawable/gesture_ambient_lift"/>
 
+<!--
     <PreferenceScreen
         android:key="device_gestures"
         android:icon="@drawable/ic_settings_gestures"
@@ -75,5 +76,6 @@
             android:targetPackage="com.cyanogenmod.settings.doze"
             android:targetClass="com.cyanogenmod.settings.doze.DozeSettings" />
     </PreferenceScreen>
+-->
 
 </PreferenceScreen>
