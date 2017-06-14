@@ -272,5 +272,9 @@
     <string name="gms_title">Настройка MicroG</string>
     <string name="gms_summary">Сервисы MicroG</string>
 
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">Безопасная громкость</string>
+    <string name="safe_headset_volume_summary">Предотвращение громкого уровня громкости, когда гарнитура подключена первый раз</string>
+    <string name="safe_headset_volume_warning_dialog_text">Прослушивание на высокой громкости может привести к повреждению слуха. Отключайте с осторожностью.</string>
 </resources>
 
