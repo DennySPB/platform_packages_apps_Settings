@@ -65,7 +65,7 @@
             android:targetPackage="com.cyanogenmod.settings.device"
             android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
     </PreferenceScreen>
-
+-->
     <PreferenceScreen
         android:key="device_doze"
         android:icon="@drawable/ic_settings_doze"
@@ -76,6 +76,5 @@
             android:targetPackage="com.cyanogenmod.settings.doze"
             android:targetClass="com.cyanogenmod.settings.doze.DozeSettings" />
     </PreferenceScreen>
--->
 
 </PreferenceScreen>
