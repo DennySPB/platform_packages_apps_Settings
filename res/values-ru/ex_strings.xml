@@ -215,7 +215,7 @@
     <string name="app_ops_record_audio">Записывать звук</string>
     <string name="app_ops_send_mms">Посылать MMS</string>
     <string name="app_ops_send_sms">Посылать SMS</string>
-    <string name="app_ops_toast_window">toast messages</string>
+    <string name="app_ops_toast_window">Всплывающие сообщения</string>
     <string name="app_ops_use_alarm_volume">Громкость будильника</string>
     <string name="app_ops_use_audio_focus">Аудио фокус</string>
     <string name="app_ops_use_bluetooth_volume">Громкость Bluetooth</string>
@@ -243,6 +243,7 @@
     <string name="app_ops_turn_on_screen">Включать экран</string>
     <string name="app_ops_get_accounts">Аккаунты</string>
     <string name="app_ops_run_in_background">Запуск в фоне</string>
+    <string name="app_ops_boot_completed">Автозапуск</string>
 
     <string name="ambient_display_show_battery_title">Статус батареи</string>
     <string name="ambient_display_show_battery_summary">Отображать индикатор батареи во время pulse</string>
