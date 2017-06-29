@@ -29,12 +29,12 @@
     <string name="dashboard_suggestions_title">Рекомендации</string>
     <string name="summary_dashboard_suggestions_enabled">Рекомендации включены</string>
     <string name="summary_dashboard_suggestions_disabled">Рекомендации выключены</string>
-    <string name="remove_tile_summaries_title">Подсказки</string>
-    <string name="remove_tile_summaries_summary_enabled">Подсказки включены</string>
-    <string name="remove_tile_summaries_summary_disabled">Подсказки выключены</string>
-    <string name="dashboard_conditions_title">Заголовки</string>
-    <string name="summary_dashboard_conditions_enabled">Заголовки включены</string>
-    <string name="summary_dashboard_conditions_disabled">Заголовки выключены</string>
+    <string name="remove_tile_summaries_title">Заголовки</string>
+    <string name="remove_tile_summaries_summary_enabled">Заголовки включены</string>
+    <string name="remove_tile_summaries_summary_disabled">Заголовки выключены</string>
+    <string name="dashboard_conditions_title">Подсказки</string>
+    <string name="summary_dashboard_conditions_enabled">Подсказки включены</string>
+    <string name="summary_dashboard_conditions_disabled">Подсказки выключены</string>
     <string name="dashboard_columns_portrait_title">Колонки (портрет)</string>
     <string name="dashboard_columns_landscape_title">Колонки (ландшафт)</string>
 

@@ -181,6 +181,7 @@
     <string name="app_ops_cat_messaging">Обмен сообщениями</string>
     <string name="app_ops_cat_media">Медиа</string>
     <string name="app_ops_cat_device">Устройство</string>
+    <string name="app_ops_cat_bootup">Автозагрузка</string>
 
     <!-- [CHAR LIMIT=NONE] App ops labels -->
     <string name="app_ops_access_camera">Камера</string>

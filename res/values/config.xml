@@ -39,7 +39,7 @@
 
     <bool name="config_regional_display_icc_id_enable">false</bool>
     <!-- When true enable color temperature setting. -->
-    <bool name="config_enableColorTemperature">false</bool>
+    <bool name="config_enableColorTemperature">true</bool>
 
     <!-- Double twist sensor name and vendor used by gesture setting -->
     <string name="gesture_double_twist_sensor_name" translatable="false">Double Twist</string>
