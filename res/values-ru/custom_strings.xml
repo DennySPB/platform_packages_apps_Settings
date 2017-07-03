@@ -145,4 +145,9 @@
     <string name="lockscreen_vibrate_enabled_title">Вибрация</string>
     <string name="lockscreen_vibrate_enabled_head">Вибрация при разблокировке</string>
 
+    <!-- Night Display -->
+    <string name="night_display_warning">Использование Ночного режима может повлечь повышенный расход батареи.</string>
+    <string name="night_display_hide">Не показывать это предупреждение</string>
+    <string name="night_display_ok">ОК</string>
+
 </resources>
