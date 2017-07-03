@@ -3340,6 +3340,7 @@
     <string name="batterylight_title">Установки светодиода батареи</string>
     <string name="battery_light_enable">Включено</string>
     <string name="battery_low_pulse_title">Пульсировать при низком заряде</string>
+    <string name="battery_charge_pulse_title">Пульсировать при зарядке</string>
     <string name="battery_light_list_title">Цвета</string>
     <string name="battery_light_low_color_title">Низкий заряд</string>
     <string name="battery_light_medium_color_title">Заряжается</string>

@@ -52,10 +52,12 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private static final String REALLY_FULL_COLOR_PREF = "really_full_color";
     private static final String BATTERY_LIGHT_PREF = "battery_light_enabled";
     private static final String BATTERY_PULSE_PREF = "battery_light_pulse";
+    private static final String BATTERY_CHARGE_PULSE_PREF = "battery_charge_light_pulse";
 
     private boolean mMultiColorLed;
     private SystemSettingSwitchPreference mEnabledPref;
     private SystemSettingSwitchPreference mPulsePref;
+    private SystemSettingSwitchPreference mPulseChargePref;
     private PreferenceGroup mColorPrefs;
     private BatteryLightPreference mLowColorPref;
     private BatteryLightPreference mMediumColorPref;
@@ -92,6 +94,11 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         mPulsePref.setChecked(Settings.System.getInt(resolver,
                         Settings.System.BATTERY_LIGHT_PULSE, mBatteryLightEnabled ? 1 : 0) != 0);
         mPulsePref.setOnPreferenceChangeListener(this);
+
+        mPulseChargePref = (SystemSettingSwitchPreference)prefSet.findPreference(BATTERY_CHARGE_PULSE_PREF);
+        mPulseChargePref.setChecked(Settings.System.getInt(resolver,
+                        Settings.System.BATTERY_CHARGE_LIGHT_PULSE, mBatteryLightEnabled ? 1 : 0) != 0);
+        mPulseChargePref.setOnPreferenceChangeListener(this);
 
         // Does the Device support changing battery LED colors?
         if (getResources().getBoolean(com.android.internal.R.bool.config_multiColorBatteryLed)) {
@@ -221,6 +228,10 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.BATTERY_LIGHT_PULSE, value ? 1:0);
+        } else if (preference == mPulseChargePref) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.BATTERY_CHARGE_LIGHT_PULSE, value ? 1:0);
         } else {
             BatteryLightPreference lightPref = (BatteryLightPreference) preference;
             updateValues(lightPref.getKey(), lightPref.getColor());

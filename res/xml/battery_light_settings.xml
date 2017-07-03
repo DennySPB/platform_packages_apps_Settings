@@ -27,10 +27,17 @@
         android:title="@string/notification_light_general_title">
 
         <org.aospextended.extensions.preference.SystemSettingSwitchPreference
+            android:key="battery_charge_light_pulse"
+            android:title="@string/battery_charge_pulse_title"
+            android:dependency="battery_light_enabled"
+            android:persistent="false" />
+
+        <org.aospextended.extensions.preference.SystemSettingSwitchPreference
             android:key="battery_light_pulse"
             android:title="@string/battery_low_pulse_title"
             android:dependency="battery_light_enabled"
             android:persistent="false" />
+
 
     </PreferenceCategory>
 
