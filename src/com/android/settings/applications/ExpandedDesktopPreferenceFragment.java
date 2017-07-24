@@ -109,7 +109,6 @@ public class ExpandedDesktopPreferenceFragment extends SettingsPreferenceFragmen
                     Settings.Global.POLICY_CONTROL);
         }
         mAllPackagesAdapter = new AllPackagesAdapter(getActivity());
-        mAllPackagesAdapter.notifyDataSetChanged();
 
         setHasOptionsMenu(true);
     }
@@ -262,7 +261,10 @@ public class ExpandedDesktopPreferenceFragment extends SettingsPreferenceFragmen
 
     @Override
     public void onRebuildComplete(ArrayList<ApplicationsState.AppEntry> entries) {
-        handleAppEntries(entries);
+        if (entries != null) {
+            handleAppEntries(entries);
+            mAllPackagesAdapter.notifyDataSetChanged();
+        }
     }
 
     @Override
@@ -279,6 +281,7 @@ public class ExpandedDesktopPreferenceFragment extends SettingsPreferenceFragmen
 
     @Override
     public void onLoadEntriesCompleted() {
+        rebuild();
     }
 
     private void handleAppEntries(List<ApplicationsState.AppEntry> entries) {
@@ -327,12 +330,7 @@ public class ExpandedDesktopPreferenceFragment extends SettingsPreferenceFragmen
     }
 
     private void rebuild() {
-        ArrayList<ApplicationsState.AppEntry> newEntries = mSession.rebuild(
-                mActivityFilter, ApplicationsState.ALPHA_COMPARATOR);
-        if (newEntries != null) {
-            handleAppEntries(newEntries);
-            mAllPackagesAdapter.notifyDataSetChanged();
-        }
+        mSession.rebuild(mActivityFilter, ApplicationsState.ALPHA_COMPARATOR);
     }
 
     private void save() {
@@ -575,7 +573,7 @@ public class ExpandedDesktopPreferenceFragment extends SettingsPreferenceFragmen
 
         private final PackageManager mPackageManager;
         private final List<String> launcherResolveInfoList = new ArrayList<String>();
-        private boolean onlyLauncher = true;
+        private boolean onlyLauncher = false;
 
         private ActivityFilter(PackageManager packageManager) {
             this.mPackageManager = packageManager;
@@ -610,4 +608,5 @@ public class ExpandedDesktopPreferenceFragment extends SettingsPreferenceFragmen
             return show;
         }
     }
+
 }

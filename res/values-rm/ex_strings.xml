@@ -95,4 +95,12 @@
   <!-- Lock screen vibrate settings -->
   <!-- Night Display -->
   <!-- Quick unlock information -->
+  <!-- Dev Options Enabled by Default -->
+  <!-- LED notifications -->
+  <!-- Notification light dialogs -->
+  <!-- Values for the notification light pulse spinners -->
+  <!-- Lights settings screen, notification light settings -->
+  <!-- Lights settings, LED notification -->
+  <!-- Add application dialog box title -->
+  <!-- Development Settings summary-->
 </resources>

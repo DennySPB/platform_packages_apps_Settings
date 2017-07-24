@@ -27,13 +27,14 @@
         <item>Saket Sawrav</item>
         <item>Nick van Bokhorst (GtrCraft)</item>
         <item>Demetris Ierokipides</item>
-        <item>rahulsnair</item>
+        <item>SlimShadys</item>
         <item>Sanjay Varun</item>
         <item>Subhrajyoti Sen</item>
         <item>Kishan</item>
         <item>shrukul, Ritesh Saxena</item>
         <item>teja.k</item>
         <item>Prateek Chaubey</item>
+        <item>Karthick Mostwanted (karthick111)</item>
         <item>Prasoon Mehra (phantom-1402)</item>
         <item>Harshit Jain (dev_harsh1998)</item>
         <item>Anand Roy</item>
@@ -57,7 +58,7 @@
         <item>Ajdin Kuduzovic (AjdinK)</item>
         <item>Rohan Khurana</item>
         <item>redbeard1083</item>
-         <item>Ninad Patil (PainKiller3)</item>    
+        <item>Ninad Patil (PainKiller3)</item>    
         <item>Rohit Jaiswal, Shiva Teja</item>
         <item>Prajapati PRAViN (Harvey_Spectar)</item>
         <item>argraur</item>
@@ -65,6 +66,7 @@
         <item>Davide Della Maddalena (davidevinavil)</item>
         <item>Amy-Clara-Rose (minidude2012)</item>
         <item>Yu Zhu (viscropst)</item>
+        <item>Samar Vispute (SamarV-121)</item>
   </string-array>
 
     <!-- Devices maintained by maintainer -->
@@ -79,20 +81,21 @@
         <item>Redmi 2 (wt88047)</item> <!-- Maintainer: Saket Sawrav -->
         <item>Moto G5 Plus (potter), Moto X Play (lux)</item> <!-- Maintainer: Nick van Bokhorst (GtrCraft) -->
         <item>Moto G 2014 (titan), Vibe K5 (A6020)</item> <!-- Maintainer: Demetris Ierokipides -->
-        <item>Moto G4/G4 Plus</item> <!-- Maintainer: rahulsnair -->
+        <item>Moto G4/G4 Plus</item> <!-- Maintainer: SlimShadys -->
         <item>OnePlus X</item> <!-- Maintainer: Sanjay Varun -->
         <item>Moto G4 Play</item> <!-- Maintainer: Subhrajyoti Sen -->
         <item>OnePlus One (bacon)</item> <!-- Maintainer: Kishan -->
         <item>Yu Yureka/Yureka+ (tomato) </item> <!-- Maintainer: shrukul -->
         <item>YU Yuphoria</item> <!-- Maintainer: teja.k -->
         <item>YU Yunique</item> <!-- Maintainer: Prateek Chaubey -->
+        <item>Lenovo K6/Power</item> <!-- Maintainer: Karthick Mostwanted (karthick111) -->
         <item>Oneplus 3/3T (oneplus3), Oneplus 2 (oneplus2), LeEco Le Pro 3 (zl1) </item> <!-- Maintainer: Prasoon Mehra (phantom-1402) -->
         <item>Lenovo A6000</item> <!-- Maintainer: Harshit Jain (dev_harsh1998) -->
         <item>MI 4I</item> <!-- Maintainer: Anand Roy -->
         <item>Huawei kiwi,Xiaomi Max(hydrogen)</item> <!-- Maintainer: jsbeyond (KAOKAO) -->  
         <item>Xiaomi Redmi 1S(armani)</item> <!-- Maintainer: Vedant Kamlaskar -->
         <item>Lenovo Vibe P1(p1a42)</item> <!-- Maintainer: Devansh Bajaj -->
-        <item>Samsung Galaxy S7 Flat/Edge, Galaxy TabS2 9.7 Wifi/Lte</item> <!-- Maintainer: Alexander Gemsa -->
+        <item>Samsung Galaxy S7 Flat/Edge, Galaxy TabS2 8.0 Wifi/Lte, Galaxy TabS2 9.7 Wifi/Lte</item> <!-- Maintainer: Alexander Gemsa -->
         <item>Moto MAXX (quark)</item> <!-- Maintainer: Dev Marsh -->
         <item>Samsung Galaxy J5, Xiaomi Redmi 3 </item> <!-- Maintainer: EsromG5 -->
         <item>LG G2 (D802)</item> <!-- Maintainer: YoDevil -->
@@ -114,9 +117,10 @@
         <item>Samsung Galaxy S4 Mini</item> <!-- Maintainer: Prajapati PRAViN (Harvey_Spectar) -->
         <item>Nexus 5X (bullhead)</item> <!-- Maintainer: argraur -->
         <item>Samsung Galaxy Tab S2 9.7 Wifi 2016 (gts210vewifi)</item> <!-- Maintainer: Giuseppe Barillari (joe2k01) -->
-        <item>Zuk Z2 plus</item> <!-- Maintainer: davidevinavil -->
+        <item>Zuk Z2 plus, Zuk Z2 pro</item> <!-- Maintainer: davidevinavil -->
         <item>Nexus 6P (angler)</item> <!-- Maintainer: Amy-Clara-Rose (minidude2012) -->
         <item>Xiaomi Mi 4c (libra)</item> <!-- Maintainer: Yu Zhu (viscropst) -->
+        <item>Moto E3 Power (taido_row)</item> <!-- Maintainer: Samar Vispute (SamarV-121) -->         
     </string-array>
 
     <!-- XDA Profile URL of maintainer -->
@@ -132,13 +136,14 @@
         <item>https://forum.xda-developers.com/member.php?u=4665275</item> <!-- Maintainer: Saket Sawrav -->
         <item>https://forum.xda-developers.com/member.php?u=5293805</item> <!-- Maintainer: Nick van Bokhorst (GtrCraft) -->
         <item>https://forum.xda-developers.com/member.php?u=1149134</item> <!-- Maintainer: Demetris Ierokipides -->
-        <item>https://forum.xda-developers.com/member.php?u=5253673</item> <!-- Maintainer: rahulsnair -->
+        <item>https://forum.xda-developers.com/member.php?u=5618023</item> <!-- Maintainer: SlimShadys -->
         <item>https://forum.xda-developers.com/member.php?u=5898022</item> <!-- Maintainer: Sanjay Varun -->
         <item>https://forum.xda-developers.com/member.php?u=6623671</item> <!-- Maintainer: Subhrajyoti Sen -->
         <item>https://forum.xda-developers.com/member.php?u=6859839</item> <!-- Maintainer: Kishan -->
         <item>https://forum.xda-developers.com/member.php?u=5753279</item> <!-- Maintainer: shrukul -->
         <item>https://forum.xda-developers.com/member.php?u=7371296</item> <!-- Maintainer: teja.k -->
         <item>https://forum.xda-developers.com/member.php?u=5713232</item> <!-- Maintainer: Prateek Chaubey -->
+        <item>https://forum.xda-developers.com/member.php?u=5786839</item> <!-- Maintainer: Karthick Mostwanted (karthick111) -->
         <item>https://forum.xda-developers.com/member.php?u=5947980</item> <!-- Maintainer: Prasoon Mehra (phantom-1402) -->
         <item>https://forum.xda-developers.com/member.php?u=5835908</item> <!-- Maintainer: Harshit Jain (dev_harsh1998) -->
         <item>https://forum.xda-developers.com/member.php?u=5362095</item> <!-- Maintainer: Anand Roy -->
@@ -170,5 +175,7 @@
         <item>https://forum.xda-developers.com/member.php?u=2823824</item> <!-- Maintainer: davidevinavil -->
         <item>https://forum.xda-developers.com/member.php?u=5545311</item> <!-- Maintainer: Amy-Clara-Rose (minidude2012) -->
         <item>https://forum.xda-developers.com/member.php?u=8142767</item> <!-- Maintainer: Yu Zhu (viscropst) -->
+        <item>https://forum.xda-developers.com/member.php?u=6868004</item> <!-- Maintainer: Samar Vispute (SamarV-121) -->         
      </string-array>
 </resources>
+

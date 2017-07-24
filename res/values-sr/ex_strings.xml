@@ -17,11 +17,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, Extended version -->
+  <string name="extended_version">Проширена верзија</string>
+  <string name="extended_version_default">Непознато</string>
+  <string name="extensions_title">Додаци</string>
   <!-- AEX OTA -->
+  <string name="aex_ota_title">AEX исправке</string>
+  <string name="aex_ota_summary">Доби најновију верзију</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Датум израде</string>
+  <string name="build_date_default">2015-01-01-0000</string>
   <!-- Vendor version -->
+  <string name="vendor_version">Верзија добављача</string>
+  <string name="vendor_version_default">Непознато</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">Резевна лозинка за рачунар</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Кораци гласноће</string>
   <string name="volume_steps_alarm_title">Кораци гласноће: аларм</string>
@@ -35,7 +44,10 @@
   <!-- Volume settings - Volume adjustment sound -->
   <string name="volume_adjust_sounds_title">Звукови подешавања јачине звука</string>
   <!-- Keyboard and Input ASS methods -->
+  <string name="show_enter_key_title">Прикажи тастер ентер</string>
+  <string name="show_enter_key_summary">Наметни приказивање дугмета ентер уместо дугмета са емотиконима</string>
   <!-- Whether to display IME switcher notifcation -->
+  <string name="ime_switcher_notify">Бирач обавештења</string>
   <!-- Changelog -->
   <string name="changelog_title">Измене</string>
   <string name="changelog_error">Белешке о променама не могу да се учитају</string>
@@ -92,6 +104,7 @@
   <!-- [CHAR LIMIT=NONE] App ops settings summary, on main settings screen. If clicked, the user is taken to a settings screen for app operations -->
   <!-- App Ops Settings -->
   <!-- App Ops Categories -->
+  <string name="app_ops_cat_media">Медија</string>
   <!-- [CHAR LIMIT=NONE] App ops labels -->
   <string name="ambient_display_show_battery_title">Статус батерије</string>
   <string name="ambient_display_show_battery_summary">Приказује индикатор батерије током пулса</string>
@@ -101,6 +114,7 @@
   <string name="battery_saver_color_summary">Омогућите наранџасту боју статусне и навигационе траке, када је укључен мод штедње батерије</string>
   <!-- Proximity wake -->
   <!-- SystemUI restart prompt -->
+  <string name="print_restart">Поново покрени</string>
   <!-- Safe headset volume restore checkbox -->
   <!-- MSIM SIM status -->
   <!-- Custom Settings -->
@@ -158,4 +172,28 @@
   <string name="lockscreen_vibrate_enabled_title">Вибрирање</string>
   <!-- Night Display -->
   <!-- Quick unlock information -->
+  <!-- Dev Options Enabled by Default -->
+  <!-- LED notifications -->
+  <string name="color_picker_dialog_title">Боја</string>
+  <string name="led_color_green">Зелена</string>
+  <string name="led_color_red">Црвена</string>
+  <string name="led_color_blue">Плава</string>
+  <string name="ok">У реду</string>
+  <!-- Notification light dialogs -->
+  <string name="default_time">Нормална</string>
+  <string name="custom_time">Прилагођено</string>
+  <string name="dialog_delete_title">Избриши</string>
+  <!-- Values for the notification light pulse spinners -->
+  <string name="pulse_length_normal">Нормална</string>
+  <string name="pulse_speed_fast">Брзо</string>
+  <string name="pulse_speed_normal">Нормална</string>
+  <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_applist_title">Апликације</string>
+  <string name="notification_light_phonelist_title">Телефон</string>
+  <string name="notification_light_default_value">Подразумевано</string>
+  <!-- Lights settings, LED notification -->
+  <!-- Add application dialog box title -->
+  <string name="profile_choose_app">Изаберите апликацију</string>
+  <string name="reset">Поништи</string>
+  <!-- Development Settings summary-->
 </resources>

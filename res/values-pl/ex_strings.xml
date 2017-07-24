@@ -17,10 +17,17 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, Extended version -->
+  <string name="extended_version">Wersja rozszerzona</string>
+  <string name="extended_version_default">Nieznany</string>
+  <string name="extensions_title">Rozszerzenia</string>
   <!-- AEX OTA -->
+  <string name="aex_ota_title">AEX aktualizacje</string>
+  <string name="aex_ota_summary">Pobierz najnowszą kompilację</string>
   <!-- About phone screen, build date -->
   <string name="build_date">Data kompilacji</string>
+  <string name="build_date_default">2015-01-01-0000</string>
   <!-- Vendor version -->
+  <string name="vendor_version_default">Nieznany</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <!-- Volume Steps -->
   <string name="volume_steps_title">Kroki poziomów głośności</string>
@@ -41,13 +48,21 @@
   <!-- Changelog -->
   <string name="changelog_title">Lista zmian</string>
   <string name="changelog_error">Nie można załadować listy zmian</string>
+  <string name="changelog_summary">Ostatnie zmiany</string>
   <!-- Linked / unlinked notification volume -->
+  <string name="notification_volume_option_title">Głośność powiadomień</string>
   <!-- Camera sound -->
   <string name="camera_sounds_title">Dźwięk migawki aparatu</string>
   <!-- Custom tiles summary -->
+  <string name="substratum_settings_summary">Silnik motywów</string>
   <!-- Root Management -->
+  <string name="rootmanagement_title">Zarządzanie rootem</string>
+  <string name="rootmanagement_dashboard_summary">Zarządzanie uprawnieniami root</string>
   <!-- Dummy string needed to hide SuperSU from launcher, no need to translate -->
+  <string name="supersu_title">SuperSU</string>
   <!-- Increasing ring tone volume -->
+  <string name="increasing_ring_volume_option_title">Narastająca głośność dzwonka</string>
+  <string name="increasing_ring_min_volume_title">Głośność początkowa</string>
   <!-- Less Notification sounds -->
   <string name="less_notification_sounds_title">Rzadsze dźwięki powiadomień</string>
   <string name="less_notification_sounds_summary">Ogranicz dźwięki powiadomień aplikacji do jednego razu na określony czas</string>
@@ -63,9 +78,11 @@
   <string name="less_notification_sounds_5m">5 minut</string>
   <!-- Magisk Manager -->
   <string name="magisk_title">Menedżer Magisk</string>
+  <string name="magisk_summary">Zarządzanie rootem</string>
   <!-- PIN scramble -->
   <!-- Per-app data restrictions -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
+  <string name="data_usage_app_restrict_all_data_title">Wyłącz dostęp do wszystkich danych w sieci komórkowej</string>
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
@@ -74,6 +91,7 @@
   <string name="battery_stats_message">Statystyki baterii zostaną zresetowane</string>
   <string name="ok_string">Ok</string>
   <!-- Doze pulse options -->
+  <string name="doze_settings">Doze ustawienia</string>
   <string name="summary_doze_enabled">Włączona</string>
   <string name="summary_doze_disabled">Wyłączone</string>
   <string name="doze_overwrite_value_title">Nadpisz domyślne</string>
@@ -111,7 +129,29 @@
   <!-- [CHAR LIMIT=NONE] App ops settings summary, on main settings screen. If clicked, the user is taken to a settings screen for app operations -->
   <!-- App Ops Settings -->
   <!-- App Ops Categories -->
+  <string name="app_ops_cat_location">Lokalizacja</string>
+  <string name="app_ops_cat_personal">Osobiste</string>
+  <string name="app_ops_cat_messaging">Wiadomości</string>
+  <string name="app_ops_cat_media">Media</string>
+  <string name="app_ops_cat_device">Urządzenie</string>
+  <string name="app_ops_cat_bootup">Rozruch</string>
   <!-- [CHAR LIMIT=NONE] App ops labels -->
+  <string name="app_ops_access_camera">aparat</string>
+  <string name="app_ops_access_location">lokalizacja</string>
+  <string name="app_ops_access_notifications">powiadomienia</string>
+  <string name="app_ops_activate_vpn">VPN</string>
+  <string name="app_ops_auto_start">autostart</string>
+  <string name="app_ops_delete_mms">usuń MMS</string>
+  <string name="app_ops_delete_sms">usuń SMS</string>
+  <string name="app_ops_send_mms">wyślij MMS</string>
+  <string name="app_ops_send_sms">wyślij SMS</string>
+  <string name="app_ops_use_notification_volume">głośność powiadomień</string>
+  <string name="app_ops_use_ring_volume">głośność dzwonka</string>
+  <string name="app_ops_use_voice_volume">głośność rozmów głosowych</string>
+  <string name="app_ops_write_mms">napisz MMS</string>
+  <string name="app_ops_write_sms">napisz SMS</string>
+  <string name="app_ops_assist_screenshot">zrzut ekranu</string>
+  <string name="app_ops_boot_completed">auto start</string>
   <string name="ambient_display_show_battery_title">Status baterii</string>
   <string name="ambient_display_show_battery_summary">Pokaż wskaźnik baterii podczas pulsu</string>
   <!-- Battery Saver Settings -->
@@ -123,11 +163,14 @@
   <string name="systemui_restart_title">OSTRZEŻENIE</string>
   <string name="systemui_restart_message">Interfejs użytkownika zostanie uruchomiony ponownie w celu poprawnej propagacji zmian wybranego ustawienia.</string>
   <string name="restarting_ui">Restartowanie interfejsu\u2026</string>
+  <string name="print_restart">Uruchom ponownie</string>
   <!-- Safe headset volume restore checkbox -->
   <!-- MSIM SIM status -->
   <!-- Custom Settings -->
   <!-- Dashboard -->
+  <string name="substratum_title">Substratum</string>
   <!-- App details: open play store link if app is user installed -->
+  <string name="app_play_store">Google Play</string>
   <!-- Expanded desktop -->
   <string name="power_menu_expanded_desktop">Rozszerzony pulpit</string>
   <string name="keywords_expanded_desktop">Rozszerzony pulpit</string>
@@ -143,11 +186,25 @@
   <string name="expanded_desktop_style_description">Wybierz domyślny styl rozszerzonego pulpitu</string>
   <string name="expanded_desktop_title">Opcje rozszerzonego pulpitu</string>
   <!-- Phone info shortcut -->
+  <string name="device_info_title">Informacje o telefonie</string>
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">wstecz</string>
   <!-- Gesture Settings -->
   <!-- Summary text for double twist for camera mode  [CHAR LIMIT=160]-->
   <!-- Animation Scale -->
+  <string name="animation_off">Animacje wyłączone</string>
+  <string name="animation_scale_0_5x">Animacja 0,5x</string>
+  <string name="animation_scale_0_75x">Animacja 0,75x</string>
+  <string name="animation_scale_1x">Animacje 1x</string>
+  <string name="animation_scale_1_5x">Animacje 1.5x</string>
+  <string name="animation_scale_2x">Animacje 2x</string>
+  <string name="animation_scale_5x">Animacje 5x</string>
+  <string name="animation_scale_10x">Animacja 10x</string>
+  <string name="sim_enabled">włączone</string>
+  <string name="sim_disabled">wyłączone</string>
+  <string name="sim_enabler_will_disable_sim_title">Uwaga</string>
+  <string name="sim_enabler_both_inactive">Nie można wyłączyć wszystkich kart SIM</string>
   <!-- Wi-Fi region code -->
   <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
@@ -182,7 +239,28 @@
   <!-- Display Settings -->
   <!-- Rotation Modes  -->
   <string name="display_rotation_disabled">Wyłączone</string>
+  <string name="display_rotation_0_title">0 stopni</string>
+  <string name="display_rotation_90_title">90 stopni</string>
+  <string name="display_rotation_180_title">180 stopni</string>
+  <string name="display_rotation_270_title">270 stopni</string>
   <!-- About AospExtended -->
+  <string name="aex_about_info">O nas</string>
+  <string name="dev_info">O AospExtended</string>
+  <string name="github">GitHub</string>
+  <string name="github_description">Zobacz nasz kod źródłowy</string>
+  <string name="gplus">Google+</string>
+  <string name="gplus_description">Dołącz do naszej społeczności na G+</string>
+  <string name="telegram">Telegram</string>
+  <string name="telegram_description">Subskrybuj nasz kanał na Telegramie</string>
+  <string name="web">Centrum pobierania</string>
+  <string name="web_description">Odwiedź nasz portal pobierania</string>
+  <string name="help_translate">Tłumaczenia</string>
+  <string name="walls">Tapety</string>
+  <string name="team2_description">Deweloper</string>
+  <string name="team4_description">Deweloper</string>
+  <string name="designers">Projektanci</string>
+  <string name="designer3_description">Tapety, Animacje startowe</string>
+  <string name="maintainers">Opiekunowie</string>
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">Dźwięk zrzutu ekranu</string>
   <!-- Advanced night mode brightness -->
@@ -199,16 +277,25 @@
   <!-- Quick unlock -->
   <string name="unlock_quick_unlock_control_title">Szybkie odblokowanie</string>
   <string name="unlock_quick_unlock_control_summary">Odblokuj automatycznie, gdy wprowadzony zostanie poprawny PIN/hasło</string>
+  <string name="reset_wallpaper_notice">Domyślna tapeta przywrócona</string>
   <!-- Wake on Plug -->
   <!-- About phone screen, processor info label  [CHAR LIMIT=40] -->
+  <string name="processor_info">Procesor</string>
   <string name="mem_info">Pamięć RAM</string>
   <!-- Category title for Charging sounds -->
+  <string name="power_notifications_category_title">Dźwięk ładowania</string>
   <string name="power_notifications_enable_title">Włącz</string>
   <!-- Sound settings, Charging sounds vibrate enable/disable, setting check box label -->
   <string name="power_notifications_vibrate_title">Wibracje</string>
   <!-- Sound settings, Charging sounds ringtone selection, preference label -->
+  <string name="power_notifications_ringtone_title">Dźwięk powiadomienia</string>
   <!-- Sound settings, charging sounds label for ringtone == none -->
+  <string name="power_notifications_ringtone_silent">Cichy</string>
   <!-- Sizes for pattern lockscreen -->
+  <string name="lock_pattern_size_3">3x3</string>
+  <string name="lock_pattern_size_4">4x4</string>
+  <string name="lock_pattern_size_5">5x5</string>
+  <string name="lock_pattern_size_6">6x6</string>
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
   <!-- Lock screen vibrate settings -->
@@ -216,4 +303,53 @@
   <!-- Night Display -->
   <string name="night_display_ok">Ok</string>
   <!-- Quick unlock information -->
+  <string name="quick_unlock_alert_title">Ostrzeżenie</string>
+  <!-- Dev Options Enabled by Default -->
+  <!-- LED notifications -->
+  <string name="color_picker_dialog_title">Kolor</string>
+  <string name="omni_notification_light_settings">Dioda powiadomień</string>
+  <string name="battery_light_enable">Włącz</string>
+  <string name="battery_light_list_title">Kolory</string>
+  <string name="battery_light_low_color_title">Bateria jest na wyczerpaniu</string>
+  <string name="battery_light_medium_color_title">Ładowanie</string>
+  <string name="battery_light_full_color_title">Naładowana (90%)</string>
+  <string name="battery_light_really_full_color_title">Naładowana (100%)</string>
+  <string name="edit_battery_settings">Edytuj ustawienia baterii</string>
+  <string name="notification_light_general_title">Główny</string>
+  <string name="led_color_green">Zielony</string>
+  <string name="led_color_red">Czerwony</string>
+  <string name="led_color_blue">Niebieski</string>
+  <string name="ok">OK</string>
+  <string name="advanced">Zaawansowane</string>
+  <string name="profiles_add">Dodaj...</string>
+  <!-- Notification light dialogs -->
+  <string name="default_time">Normalny</string>
+  <string name="custom_time">Niestandardowe</string>
+  <string name="dialog_delete_title">Usuń</string>
+  <!-- Values for the notification light pulse spinners -->
+  <string name="pulse_length_always_on">Zawsze włączone</string>
+  <string name="pulse_length_very_short">Bardzo krótko</string>
+  <string name="pulse_length_short">Krótko</string>
+  <string name="pulse_length_normal">Normalny</string>
+  <string name="pulse_length_long">Długo</string>
+  <string name="pulse_length_very_long">Bardzo długo</string>
+  <string name="pulse_speed_very_fast">Bardzo szybko</string>
+  <string name="pulse_speed_fast">Szybko</string>
+  <string name="pulse_speed_normal">Normalny</string>
+  <string name="pulse_speed_slow">Wolno</string>
+  <string name="pulse_speed_very_slow">Bardz wolno</string>
+  <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_general_title">Główny</string>
+  <string name="notification_light_applist_title">Aplikacje</string>
+  <string name="notification_light_phonelist_title">Telefon</string>
+  <string name="notification_light_default_value">Domyślne</string>
+  <string name="notification_light_missed_call_title">Nieodebrane połączenie</string>
+  <!-- Lights settings, LED notification -->
+  <string name="font_sample_text">11:57</string>
+  <!-- Add application dialog box title -->
+  <string name="profile_choose_app">Wybierz aplikację</string>
+  <string name="reset">Resetuj</string>
+  <!-- Development Settings summary-->
+  <string name="adb_enabled">ADB włączone</string>
+  <string name="adb_disabled">ADB wyłączone</string>
 </resources>
