@@ -714,6 +714,8 @@
 
     <!-- Titles for the list of long press timeout options. -->
     <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for ver yshort long-press timeout [CHAR LIMIT=25] -->
+        <item>Very Short</item>
         <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
         <item>Short</item>
         <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
@@ -724,6 +726,7 @@
 
     <!-- Values for the list of long press timeout options. -->
     <string-array name="long_press_timeout_selector_values" translatable="false">
+        <item>250</item>
         <item>500</item>
         <item>1000</item>
         <item>1500</item>

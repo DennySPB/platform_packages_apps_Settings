@@ -369,11 +369,6 @@
     <item msgid="5258373962467495905">"Получение данных об аккаунтах"</item>
     <item msgid="334625385979270703">"Запуск в фоновом режиме"</item>
   </string-array>
-  <string-array name="long_press_timeout_selector_titles">
-    <item msgid="3511504869290423954">"Небольшая"</item>
-    <item msgid="2560532955514699713">"Средняя"</item>
-    <item msgid="2372711992605524591">"Большая"</item>
-  </string-array>
   <string-array name="captioning_typeface_selector_titles">
     <item msgid="1319652728542138112">"По умолчанию"</item>
     <item msgid="1016452621833735880">"Без засечек"</item>
@@ -477,4 +472,17 @@
     <item msgid="2900554746706302178">"Добавленные более 60 дней назад"</item>
     <item msgid="5692284879054004388">"Добавленные более 90 дней назад"</item>
   </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for ver yshort long-press timeout [CHAR LIMIT=25] -->
+        <item>Очень короткая</item>
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>Короткая</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>Средняя</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>Длинная</item>
+    </string-array>
+
 </resources>
