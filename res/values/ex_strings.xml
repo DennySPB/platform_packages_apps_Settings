@@ -276,6 +276,9 @@
     <string name="ka_title">Performance</string>
     <string name="ka_summary">Kernel auditor</string>
 
+    <string name="wakeblock_title">Wakeblock</string>
+    <string name="wakeblock_summary">Wakelock protector</string>
+
     <string name="gms_title">MicroG settings</string>
     <string name="gms_summary">Tune your MicroG</string>
 

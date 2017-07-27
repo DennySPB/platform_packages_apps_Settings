@@ -257,6 +257,8 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final String GMS_FRAGMENT = "com.android.settings.gms";
 
+    private static final String WAKEBLOCK_FRAGMENT = "com.android.settings.wakeblock";
+
     private String mFragmentClass;
     private String mActivityAction;
 
@@ -1105,6 +1107,14 @@ public class SettingsActivity extends SettingsDrawerActivity
             finish();
             return null;
 	}
+	 if (WAKEBLOCK_FRAGMENT.equals(fragmentName)) {
+            Intent wakeblockIntent = new Intent();
+            wakeblockIntent.setClassName("com.giovannibozzano.wakeblock", "com.giovannibozzano.wakeblock.MainActivity");
+            startActivity(wakeblockIntent);
+            finish();
+            return null;
+	}
+
 	 if (GMS_FRAGMENT.equals(fragmentName)) {
             Intent gmsIntent = new Intent();
             gmsIntent.setClassName("com.google.android.gms", "org.microg.gms.ui.SettingsActivity");
@@ -1230,6 +1240,16 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                         Settings.KActivity.class.getName()),
                 kapresent, isAdmin, pm);
+
+	//WakeBlock Settings
+        boolean wakeblockpresent = false;
+        try {
+            wakeblockpresent = (getPackageManager().getPackageInfo("com.giovannibozzano.wakeblock", 0).versionCode > 0);
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.WakeBlockActivity.class.getName()),
+                wakeblockpresent, isAdmin, pm);
 	// GMS MicroG Settings
         boolean gmspresent = false;
         try {
