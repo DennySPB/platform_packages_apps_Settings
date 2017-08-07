@@ -84,8 +84,8 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
             "toggle_large_pointer_icon";
     private static final String TOGGLE_MASTER_MONO =
             "toggle_master_mono";
-    private static final String SELECT_LONG_PRESS_TIMEOUT_PREFERENCE =
-            "select_long_press_timeout_preference";
+//    private static final String SELECT_LONG_PRESS_TIMEOUT_PREFERENCE =
+//            "select_long_press_timeout_preference";
     private static final String ENABLE_ACCESSIBILITY_GESTURE_PREFERENCE_SCREEN =
             "enable_global_gesture_preference_screen";
     private static final String CAPTIONING_PREFERENCE_SCREEN =
@@ -115,7 +115,7 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
     // Auxiliary members.
     static final Set<ComponentName> sInstalledServices = new HashSet<>();
 
-    private final Map<String, String> mLongPressTimeoutValuetoTitleMap = new HashMap<>();
+//    private final Map<String, String> mLongPressTimeoutValuetoTitleMap = new HashMap<>();
 
     private final Handler mHandler = new Handler();
 
@@ -171,7 +171,7 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mToggleSpeakPasswordPreference;
     private SwitchPreference mToggleLargePointerIconPreference;
     private SwitchPreference mToggleMasterMonoPreference;
-    private ListPreference mSelectLongPressTimeoutPreference;
+//    private ListPreference mSelectLongPressTimeoutPreference;
     private Preference mNoServicesMessagePreference;
     private PreferenceScreen mCaptioningPreferenceScreen;
     private PreferenceScreen mDisplayMagnificationPreferenceScreen;
@@ -180,7 +180,7 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
     private PreferenceScreen mDisplayDaltonizerPreferenceScreen;
     private SwitchPreference mToggleInversionPreference;
 
-    private int mLongPressTimeoutDefault;
+//    private int mLongPressTimeoutDefault;
 
     private DevicePolicyManager mDpm;
 
@@ -221,22 +221,22 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (mSelectLongPressTimeoutPreference == preference) {
-            handleLongPressTimeoutPreferenceChange((String) newValue);
-            return true;
-        } else if (mToggleInversionPreference == preference) {
+//        if (mSelectLongPressTimeoutPreference == preference) {
+//            handleLongPressTimeoutPreferenceChange((String) newValue);
+//            return true;
+        if (mToggleInversionPreference == preference) {
             handleToggleInversionPreferenceChange((Boolean) newValue);
             return true;
         }
         return false;
     }
 
-    private void handleLongPressTimeoutPreferenceChange(String stringValue) {
-        Settings.Secure.putInt(getContentResolver(),
-                Settings.Secure.LONG_PRESS_TIMEOUT, Integer.parseInt(stringValue));
-        mSelectLongPressTimeoutPreference.setSummary(
-                mLongPressTimeoutValuetoTitleMap.get(stringValue));
-    }
+//    private void handleLongPressTimeoutPreferenceChange(String stringValue) {
+//        Settings.Secure.putInt(getContentResolver(),
+//                Settings.Secure.LONG_PRESS_TIMEOUT, Integer.parseInt(stringValue));
+//        mSelectLongPressTimeoutPreference.setSummary(
+//                mLongPressTimeoutValuetoTitleMap.get(stringValue));
+//    }
 
     private void handleToggleInversionPreferenceChange(boolean checked) {
         Settings.Secure.putInt(getContentResolver(),
@@ -356,20 +356,20 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
                 (SwitchPreference) findPreference(TOGGLE_MASTER_MONO);
 
         // Long press timeout.
-        mSelectLongPressTimeoutPreference =
-                (ListPreference) findPreference(SELECT_LONG_PRESS_TIMEOUT_PREFERENCE);
-        mSelectLongPressTimeoutPreference.setOnPreferenceChangeListener(this);
-        if (mLongPressTimeoutValuetoTitleMap.size() == 0) {
-            String[] timeoutValues = getResources().getStringArray(
-                    R.array.long_press_timeout_selector_values);
-            mLongPressTimeoutDefault = Integer.parseInt(timeoutValues[0]);
-            String[] timeoutTitles = getResources().getStringArray(
-                    R.array.long_press_timeout_selector_titles);
-            final int timeoutValueCount = timeoutValues.length;
-            for (int i = 0; i < timeoutValueCount; i++) {
-                mLongPressTimeoutValuetoTitleMap.put(timeoutValues[i], timeoutTitles[i]);
-            }
-        }
+//        mSelectLongPressTimeoutPreference =
+//                (ListPreference) findPreference(SELECT_LONG_PRESS_TIMEOUT_PREFERENCE);
+//        mSelectLongPressTimeoutPreference.setOnPreferenceChangeListener(this);
+//        if (mLongPressTimeoutValuetoTitleMap.size() == 0) {
+//            String[] timeoutValues = getResources().getStringArray(
+//                    R.array.long_press_timeout_selector_values);
+//            mLongPressTimeoutDefault = Integer.parseInt(timeoutValues[0]);
+//            String[] timeoutTitles = getResources().getStringArray(
+//                    R.array.long_press_timeout_selector_titles);
+//            final int timeoutValueCount = timeoutValues.length;
+//            for (int i = 0; i < timeoutValueCount; i++) {
+//                mLongPressTimeoutValuetoTitleMap.put(timeoutValues[i], timeoutTitles[i]);
+//            }
+//        }
 
         // Captioning.
         mCaptioningPreferenceScreen = (PreferenceScreen) findPreference(
@@ -542,11 +542,11 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
         updateMasterMono();
 
         // Long press timeout.
-        final int longPressTimeout = Settings.Secure.getInt(getContentResolver(),
-                Settings.Secure.LONG_PRESS_TIMEOUT, mLongPressTimeoutDefault);
-        String value = String.valueOf(longPressTimeout);
-        mSelectLongPressTimeoutPreference.setValue(value);
-        mSelectLongPressTimeoutPreference.setSummary(mLongPressTimeoutValuetoTitleMap.get(value));
+//        final int longPressTimeout = Settings.Secure.getInt(getContentResolver(),
+//                Settings.Secure.LONG_PRESS_TIMEOUT, mLongPressTimeoutDefault);
+//        String value = String.valueOf(longPressTimeout);
+//        mSelectLongPressTimeoutPreference.setValue(value);
+//        mSelectLongPressTimeoutPreference.setSummary(mLongPressTimeoutValuetoTitleMap.get(value));
 
         updateFeatureSummary(Settings.Secure.ACCESSIBILITY_CAPTIONING_ENABLED,
                 mCaptioningPreferenceScreen);
