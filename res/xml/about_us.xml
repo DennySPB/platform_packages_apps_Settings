@@ -51,7 +51,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:icon="@drawable/ic_telegram" >
     <intent
                android:action="android.intent.action.VIEW"
-               android:data="http://telegram.me/aospextended" />
+               android:data="http://telegram.me/aex_mod" />
         </PreferenceScreen>
 
         <PreferenceScreen
@@ -60,7 +60,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:icon="@drawable/ic_web" >
     <intent
                android:action="android.intent.action.VIEW"
-               android:data="http://downloads.aospextended.com/" />
+               android:data="https://yadi.sk/d/vOdXRG_y3JSoVh" />
         </PreferenceScreen>
 
         <PreferenceScreen

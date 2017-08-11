@@ -359,8 +359,8 @@
   <!-- About AospExtended -->
   <string name="aex_about_info">О нас</string>
   <string name="aex_about_summary">Наше введение и команда</string>
-  <string name="aex_about_info_summary">AospExtended - это прошивка на базе AOSP которая использует стандартный интерфейс и настройки, с множеством дополнительных параметров и темами Substratum. Проект был создан после сбора различных коммитов из других проектов. База AOSP, с нашими изменениями даёт плавность и интерфейс без глюков из коробки. Мы будем постоянно пытаться добавить дополнительные функции и сделать их еще лучше в будущих обновлениях.&#35;BeExtended</string>
-  <string name="dev_info">Об AospExtended</string>
+  <string name="aex_about_info_summary">AospExtended mod- это прошивка на базе AOSP которая использует стандартный интерфейс и настройки, с множеством дополнительных параметров и темами Substratum. Проект был создан после сбора различных коммитов из других проектов. База AOSP, с нашими изменениями даёт плавность и интерфейс без глюков из коробки. Мы будем постоянно пытаться добавить дополнительные функции и сделать их еще лучше в будущих обновлениях.&#35;BeExtended</string>
+  <string name="dev_info">Об AospExtended mod</string>
   <string name="github">Github</string>
   <string name="github_description">Посмотрите наш исходный код</string>
   <string name="gplus">Google+</string>
