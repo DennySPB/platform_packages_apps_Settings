@@ -153,7 +153,10 @@
   <string name="app_ops_cat_bootup">Загрузка</string>
   <!-- [CHAR LIMIT=NONE] App ops labels -->
   <string name="app_ops_access_camera">камера</string>
-  <string name="app_ops_access_location">местоположение</string>
+
+  <string name="app_ops_access_coarse_location">по координатам сети</string>
+  <string name="app_ops_access_fine_location">по всем источникам</string>
+  <string name="app_ops_access_gps_location">по GPS</string>
   <string name="app_ops_access_notifications">уведомления</string>
   <string name="app_ops_activate_vpn">VPN</string>
   <string name="app_ops_auto_start">автозапуск</string>
