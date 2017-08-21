@@ -170,6 +170,7 @@
   <string name="app_ops_modify_clipboard">изменение буфера обмена</string>
   <string name="app_ops_modify_contacts">изменить данные контактов</string>
   <string name="app_ops_modify_settings">изменение настроек</string>
+  <string name="app_ops_mute_unmute_microphone">включение/выключение микрофона</string>
   <string name="app_ops_play_audio">воспроизведение аудио</string>
   <string name="app_ops_post_notification">выведение уведомлений</string>
   <string name="app_ops_project_media">трансляция контента</string>
@@ -520,5 +521,4 @@
   <!-- Pocket judge -->
   <string name="pocket_judge_title">Карманный режим</string>
   <string name="pocket_judge_summary">Блокировать экран и кнопки когда устройство в кармане</string>
-
 </resources>
