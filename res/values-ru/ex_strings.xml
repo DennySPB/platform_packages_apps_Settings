@@ -520,6 +520,8 @@
   <string name="adb_disabled">Отладка отключена</string>
   <string name="ka_title">Производительность</string>
   <string name="wakeblock_summary">Управление Wakeblock</string>
+  <string name="spectrum_summary">Профили производительности</string>
+
 
   <!-- Pocket judge -->
   <string name="pocket_judge_title">Карманный режим</string>

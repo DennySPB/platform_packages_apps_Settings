@@ -260,6 +260,8 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final String WAKEBLOCK_FRAGMENT = "com.android.settings.wakeblock";
 
+    private static final String SPECTRUM_FRAGMENT = "com.android.settings.spectrum";
+
     private String mFragmentClass;
     private String mActivityAction;
 
@@ -1116,7 +1118,13 @@ public class SettingsActivity extends SettingsDrawerActivity
             finish();
             return null;
 	}
-
+	if (SPECTRUM_FRAGMENT.equals(fragmentName)) {
+            Intent spectrumIntent = new Intent();
+            spectrumIntent.setClassName("org.frap129.spectrum", "org.frap129.spectrum.MainActivity");
+            startActivity(spectrumIntent);
+            finish();
+            return null;
+	}
 	 if (GMS_FRAGMENT.equals(fragmentName)) {
             Intent gmsIntent = new Intent();
             gmsIntent.setClassName("com.google.android.gms", "org.microg.gms.ui.SettingsActivity");
@@ -1252,6 +1260,17 @@ public class SettingsActivity extends SettingsDrawerActivity
         setTileEnabled(new ComponentName(packageName,
                         Settings.WakeBlockActivity.class.getName()),
                 wakeblockpresent, isAdmin, pm);
+
+	//Spectrum Settings
+        boolean spectrumpresent = false;
+        try {
+            spectrumpresent = (getPackageManager().getPackageInfo("org.frap129.spectrum", 0).versionCode > 0);
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.SpectrumActivity.class.getName()),
+                spectrumpresent, isAdmin, pm);
+
 	// GMS MicroG Settings
         boolean gmspresent = false;
         try {

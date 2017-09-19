@@ -164,6 +164,7 @@ public class Settings extends SettingsActivity {
 
     public static class KActivity extends SettingsActivity { /* empty */ }
     public static class WakeBlockActivity extends SettingsActivity { /* empty */ }
+    public static class SpectrumActivity extends SettingsActivity { /* empty */ }
     public static class GMSActivity extends SettingsActivity { /* empty */ }
 
     // AospExtended Additions.
