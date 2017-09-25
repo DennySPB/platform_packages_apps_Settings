@@ -18,16 +18,9 @@ package com.android.settings.dashboard;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
-import android.content.Intent;
-import android.content.pm.ResolveInfo;
-import android.content.res.TypedArray;
-import android.text.TextUtils;
-import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.Icon;
 import android.graphics.PorterDuff.Mode;
-import android.provider.Settings;
 import android.os.Bundle;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
@@ -43,6 +36,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.provider.Settings;
+import android.content.res.TypedArray;
+import android.graphics.Color;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
@@ -96,12 +91,13 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
     private Condition mExpandedCondition = null;
     private SuggestionParser mSuggestionParser;
 
-    private int mNumColumns;
     private int mPrimaryColor;
     private int mAccentColor;
 
     private boolean mThemeEnabled;
     private boolean mDarkThemeEnabled;
+
+    private int mNumColumns;
 
     public DashboardAdapter(Context context, SuggestionParser parser, Bundle savedInstanceState,
                 List<Condition> conditions) {
@@ -109,10 +105,7 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
         mCache = new IconCache(context);
         mSuggestionParser = parser;
         mConditions = conditions;
-
-        final Resources res = context.getResources();
-        mNumColumns = res.getInteger(R.integer.dashboard_num_columns);
-        final TypedArray ta = context.obtainStyledAttributes(new int[]{
+	final TypedArray ta = context.obtainStyledAttributes(new int[]{
             android.R.attr.colorAccent,
             android.R.attr.colorPrimary});
         mAccentColor = ta.getColor(0, 0);
@@ -126,6 +119,9 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
 
         mThemeEnabled = accentColor != 0 || primaryColor != 0;
         mDarkThemeEnabled = primaryColor == 3 || primaryColor == 1;
+
+        final Resources res = context.getResources();
+        mNumColumns = res.getInteger(R.integer.dashboard_num_columns);
 
         setHasStableIds(true);
 
@@ -212,8 +208,9 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
             countItem(mConditions.get(i), R.layout.condition_card, shouldShow, NS_CONDITION);
         }
         boolean hasSuggestions = mSuggestions != null && mSuggestions.size() != 0;
-        countItem(null, R.layout.dashboard_spacer, hasConditions && hasSuggestions
+	countItem(null, R.layout.dashboard_spacer, hasConditions && hasSuggestions
                 && !mDarkThemeEnabled, NS_SPACER);
+
         countItem(null, R.layout.suggestion_header, hasSuggestions, NS_SPACER);
         resetCount();
         if (mSuggestions != null) {
@@ -277,7 +274,7 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
         switch (mTypes.get(position)) {
             case R.layout.dashboard_category:
                 onBindCategory(holder, (DashboardCategory) mItems.get(position));
-                if (mDarkThemeEnabled) {
+            if (mDarkThemeEnabled) {
                     holder.itemView.getBackground().setColorFilter(mPrimaryColor, Mode.SRC_ATOP);
                 }
                 break;
@@ -289,25 +286,6 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
                 if (mDarkThemeEnabled) {
                     holder.itemView.getBackground().setColorFilter(mPrimaryColor, Mode.SRC_ATOP);
                 }
-                break;
-            case R.layout.dashboard_tile_switch:
-                final Tile tileSitch = (Tile) mItems.get(position);
-                mLte4GEnablerHolder = holder;
-                onBindTile(holder, tileSitch);
-                holder.itemView.setOnClickListener(this);
-                mSw = (Switch) holder.itemView.findViewById(R.id.switchWidget);
-                mLte4GEnabler.setSwitch(mSw);
-                holder.itemView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                       mSw.setChecked(!mSw.isChecked());
-                       set4GEnableSummary(mSw.isChecked());
-                    }
-                });
-                if (mDarkThemeEnabled) {
-                    holder.itemView.getBackground().setColorFilter(mPrimaryColor, Mode.SRC_ATOP);
-                }
-                updateLte4GEnabler();
                 break;
             case R.layout.suggestion_header:
                 onBindSuggestionHeader(holder);
@@ -330,7 +308,7 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
                                 showRemoveOption(v, suggestion);
                             }
                         });
-                if (mDarkThemeEnabled) {
+		if (mDarkThemeEnabled) {
                     holder.itemView.getBackground().setColorFilter(mPrimaryColor, Mode.SRC_ATOP);
                     holder.icon.setColorFilter(mAccentColor, Mode.SRC_ATOP);
                     holder.title.setTextColor(Color.WHITE);
@@ -342,7 +320,7 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
                 break;
             case R.layout.condition_card:
                 ConditionAdapterUtils.bindViews((Condition) mItems.get(position), holder,
-                        mItems.get(position) == mExpandedCondition, mDarkThemeEnabled,
+	                mItems.get(position) == mExpandedCondition, mDarkThemeEnabled,
                         mThemeEnabled, mAccentColor, this, new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {

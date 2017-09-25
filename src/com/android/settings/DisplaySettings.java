@@ -18,13 +18,10 @@ package com.android.settings;
 
 import android.app.Activity;
 import android.app.ActivityManager;
-import android.app.ActivityManagerNative;
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.ThemeManager;
 import android.app.UiModeManager;
 import android.app.WallpaperManager;
 import android.app.admin.DevicePolicyManager;
+import android.app.ThemeManager;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.ComponentName;
@@ -60,9 +57,8 @@ import com.android.settings.accessibility.ToggleFontSizePreferenceFragment;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.nexus.DisplayRotation;
-
-import com.android.settings.display.ScreenZoomPreference;
 import com.android.settings.display.ThemePreference;
+
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settingslib.RestrictedLockUtils;
@@ -100,7 +96,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_DOZE_FRAGMENT = "doze_fragment";
     private static final String KEY_TAP_TO_WAKE = "tap_to_wake";
     private static final String KEY_POCKET_JUDGE = "pocket_judge";
-    private static final String KEY_THEME = "theme";
     private static final String KEY_AUTO_BRIGHTNESS = "auto_brightness";
     private static final String KEY_NIGHT_DISPLAY = "night_display";
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
@@ -109,6 +104,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_WALLPAPER = "wallpaper";
     private static final String KEY_VR_DISPLAY_PREF = "vr_display_pref";
     private static final String KEY_PROXIMITY_WAKE = "proximity_on_wake";
+    private static final String KEY_THEME = "theme";
 
     private static final String DASHBOARD_PORTRAIT_COLUMNS = "dashboard_portrait_columns";
     private static final String DASHBOARD_LANDSCAPE_COLUMNS = "dashboard_landscape_columns";
@@ -165,7 +161,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         PreferenceCategory displayPrefs = (PreferenceCategory)
                 findPreference(KEY_CATEGORY_DISPLAY);
 
-	PreferenceScreen prefSet = getPreferenceScreen();
+    PreferenceScreen prefSet = getPreferenceScreen();
 
         mScreenSaverPreference = findPreference(KEY_SCREEN_SAVER);
         if (mScreenSaverPreference != null
@@ -288,16 +284,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mNightModePreference.setOnPreferenceChangeListener(this);
         }
 
-        mProximityCheckOnWakePreference = (SwitchPreference) findPreference(KEY_PROXIMITY_WAKE);
-        boolean proximityCheckOnWake = getResources().getBoolean(
-                com.android.internal.R.bool.config_proximityCheckOnWake);
-        if (!proximityCheckOnWake) {
-            if (mWakeUpOptions != null && mProximityCheckOnWakePreference != null) {
-                mWakeUpOptions.removePreference(findPreference(KEY_PROXIMITY_WAKE));
-            }
-            Settings.System.putInt(resolver, Settings.System.PROXIMITY_ON_WAKE, 0);
-
-        mThemePreference = (ThemePreference) findPreference(KEY_THEME);
+	 mThemePreference = (ThemePreference) findPreference(KEY_THEME);
         if (mThemePreference != null) {
             final int accentColorValue = Settings.Secure.getInt(getContext().getContentResolver(),
                     Settings.Secure.THEME_ACCENT_COLOR, 1);
@@ -312,17 +299,15 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 mThemePreference.setSummary(R.string.oms_enabled);
             }
         }
-    }
 
-    @Override
-    public void onPreferenceClick(Preference preference) {
-        if (preference == mDialogPref) {
-            if(isRJILMode) {
-                mDialogPref.showDialog(null);
-                if(mDialogPref.getDialog() != null) {
-                    mDialogPref.getDialog().show();
-                }
+        mProximityCheckOnWakePreference = (SwitchPreference) findPreference(KEY_PROXIMITY_WAKE);
+        boolean proximityCheckOnWake = getResources().getBoolean(
+                com.android.internal.R.bool.config_proximityCheckOnWake);
+        if (!proximityCheckOnWake) {
+            if (mWakeUpOptions != null && mProximityCheckOnWakePreference != null) {
+                mWakeUpOptions.removePreference(findPreference(KEY_PROXIMITY_WAKE));
             }
+            Settings.System.putInt(resolver, Settings.System.PROXIMITY_ON_WAKE, 0);
         }
     }
 
@@ -458,7 +443,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         disablePreferenceIfManaged(KEY_WALLPAPER, UserManager.DISALLOW_SET_WALLPAPER);
         getContentResolver().registerContentObserver(Settings.System.getUriFor(
-		    Settings.System.ACCELEROMETER_ROTATION), true, mAccelerometerRotationObserver);
+	    Settings.System.ACCELEROMETER_ROTATION), true, mAccelerometerRotationObserver);
         updateDisplayRotationPreferenceDescription();
     }
 
@@ -604,8 +589,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 Log.e(TAG, "could not persist night mode setting", e);
             }
         }
-
-        if (mThemePreference != null) {
+	 if (mThemePreference != null) {
             final int accentColorValue = Settings.Secure.getInt(getContext().getContentResolver(),
                     Settings.Secure.THEME_ACCENT_COLOR, 1);
             final int primaryColorValue = Settings.Secure.getInt(getContext().getContentResolver(),
@@ -619,7 +603,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 mThemePreference.setSummary(R.string.oms_enabled);
             }
         }
-
         return true;
     }
 
@@ -728,4 +711,3 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 }
             };
 }
-
